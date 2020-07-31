@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import UserList from './components/UserList';
+import UsuariosListado from './components/UsuariosListado';
 
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -8,9 +8,7 @@ import store from './redux/store';
 function App() {
   return (
     <Provider store={store}>
-      <div className='App'>
-        <UserList></UserList>
-      </div>
+      <UsuariosListado></UsuariosListado>
     </Provider>
   );
 }
